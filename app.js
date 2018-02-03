@@ -29,6 +29,10 @@ app.get('/',function(req, res) {
 	res.sendFile('index.html', {root: __dirname});
 });
 
+// everything below blank in final version
+// write out README.md
+// add another 'solutions' branch with final code
+
 // display all people
 app.get('/friends', function(req, res, next) {
 	Person.find({}, function(err, result) {
