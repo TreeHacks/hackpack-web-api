@@ -28,7 +28,7 @@ So that's all! We hope you can come to our workshop where we will walk through t
 
 ### Resources
 
-You can access the fully written code for our web API and look over the slides used in our presentation in our GitHub repo: https://github.com/TreeHacks/hackpack-web-api
+You can access the fully written code for our web API and look over the slides used in our presentation here in this GitHub repo under the Master branch!
 
 Mozilla also has an excellent documentation website called the MDN that outlines anything you may ever want to know about web development in detail. They have a great text-based guide to getting started in web development here: https://developer.mozilla.org/en-US/docs/Learn
 
