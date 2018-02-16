@@ -39,80 +39,30 @@ app.listen(port, function() {
 
 // serves index.html file
 app.get('/',function(req, res) {   
-	res.sendFile('index.html', {root: __dirname});
+	
 }); 
 
 // display all people
 app.get('/people', function(req, res, next) {
-	Person.find({}, function(err, result) {
-		if (err) {
-			console.log(err)
-		} else {
-			res.send(result);
-		}
-	});
+	
 });
 
 // display one person's friends
 app.get('/people/:id', function(req, res, next) {
-	Person.findById(req.params.id, function(err, result) {
-		if (!err) {
-			res.send(result.friends);
-		} else {
-			throw err;
-		}
-	});
+	
 });
 
 // adding a new person
 app.post('/people', function(req, res, next) {
-	request('https://dog.ceo/api/breeds/image/random', function (error, response, body) {
-		if (!error && response.statusCode == 200) {
-			var person = new Person();
-			person.name = req.body.name;
-			person.dog = JSON.parse(body).message;
-			person.friends = [];
-			person.save(function(err, person) {
-				if (err) {
-					console.log(err);
-				} else {
-					res.send(person);
-				}
-			})
-	  	}
-	})
+	
 });
 
 // adding a friend to a person
 app.put('/people/:id', function(req, res, next) {
-	Person.findById(req.params.id, function(err, person) {
-		person.friends.push(req.body.id);
-		person.save(function(err) {
-			if (err) {
-				console.log(err);
-			} else {
-				Person.findById(req.body.id, function(err, person) {
-					person.friends.push(req.params.id);
-					person.save(function(err) {
-						if (err) {
-							console.log(err);
-						} else {
-							res.send("Friendship between " + req.body.id + " and " + req.params.id + "created!");
-						}
-					})
-				});
-			}
-		})
-	});
+	
 });
 
 // removing a person
 app.delete('/people/:id', function(req, res, next) {
-	Person.findByIdAndRemove(req.params.id, function(err, result) {
-		if (err) {
-			console.log(err);
-		} else {
-			res.send("Deleted person with id " + req.params.id);
-		}
-	});
+	
 });
