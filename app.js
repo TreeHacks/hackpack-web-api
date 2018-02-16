@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 var path = require("path");
+var request = require('request');
 const Person = require('./models/person')
 
 // set up express app
@@ -65,15 +66,20 @@ app.get('/people/:id', function(req, res, next) {
 
 // adding a new person
 app.post('/people', function(req, res, next) {
-	var person = new Person();
-	person.name = req.body.name;
-	person.friends = [];
-	person.save(function(err, person) {
-		if (err) {
-			console.log(err);
-		} else {
-			res.send(person);
-		}
+	request('https://dog.ceo/api/breeds/image/random', function (error, response, body) {
+		if (!error && response.statusCode == 200) {
+			var person = new Person();
+			person.name = req.body.name;
+			person.dog = JSON.parse(body).message;
+			person.friends = [];
+			person.save(function(err, person) {
+				if (err) {
+					console.log(err);
+				} else {
+					res.send(person);
+				}
+			})
+	  	}
 	})
 });
 

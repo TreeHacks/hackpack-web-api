@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const PersonSchema = new Schema({
 	name: String,
+	dog: String,
 	friends: [ Schema.ObjectId ]
 });
 
