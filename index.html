@@ -1,1 +1,26 @@
-worked
+<!doctype>
+<head>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="scripts/index.js"></script>
+</head>
+<body>
+	<label for="add-person">add a person:</label>
+	<input type="text" id="add-person" name="add-person" placeholder="name">
+	<button id="add-person-button">submit</button>
+	<br/><br/>
+	<label for="get-friends">find a person's friends:</label>
+	<input type="text" id="get-friends" name="get-friends" placeholder="id">
+	<button id="get-friends-button">submit</button>
+	<pre id="get-friends-container"></pre>
+	<label for="add-friend">add a friend to a person:</label>
+	<input type="text" id="add-friend-self" name="add-friend" placeholder="person's id">
+	<input type="text" id="add-friend-friend" name="add-friend" placeholder="friend's id">
+	<button id="add-friend-button">submit</button>
+	<br/><br/>
+	<label for="remove-person">remove a person:</label>
+	<input type="text" id="remove-person" name="remove-person" placeholder="person's id">
+	<button id="remove-person-button">submit</button>
+	<br/><br/>
+	<p>all friends:</p>
+	<pre id="get-all-container"></pre>
+</body>
