@@ -8,7 +8,7 @@ Welcome to TreeHacks! This is the guide accompanying the Web API workshop. The g
 
 ### What is an API
 
-API stands for Application Programming Interface. Pretty much, APIs are a way to access data and services running on servers from your own program. A great example of a publicly available API is the Dog API (literally called this) at dog.ceo/dog-api/. You can access all kinds of cool information about dogs by clicking the "JSON" button listed under each route. Give it a go! 
+API stands for Application Programming Interface. Pretty much, APIs are a way to access data and services running on servers from your own program. A great example of a publicly available API is the Dog API (literally called this) at https://dog.ceo/dog-api/. You can access all kinds of cool information about dogs by clicking the "JSON" button listed under each route. Give it a go! 
 
 You'll notice you'll be redirected to a webpage with some texted formatted in curly '{}' brackets. What you are seeing is a JavaScript Object represented in JSON (JavaScript Object Notation). A JS Object is essentially a Python dictionary, or a C++ map in that it's function is mapping keys to values. Practically everything in JavaScript is an Object (another story), so that's why it's important. Another reason why it's important is that JSON is the standard way to represent data being transferred across the web in general, so for example when you register an account on a website, the data being sent to the web server is in JSON. Also, MongoDB stores it's information in JavaScript Objects.
 
