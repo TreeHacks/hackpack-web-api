@@ -16,7 +16,7 @@ What's cool is that you can pass these API calls into your web programs so that 
 
 ### Frontend vs Backend, or singlehandedly demystifying the magic of the Internet
 
-Ever wondered how the internet works? Very simply, when you go to a website, you are recieving a load of JavaScript, CSS, and HTML files from some server that are then run by your web browser. The code running in your browser is the frontend, and the code running on the server delivering information is the backend. Web development consists of writing code that runs on both ends (fullstack), with people specializing towards one or the other. An API is essentially the code delivering In this workshop, we will be writing majority of the code on the backend, since tha
+Ever wondered how the internet works? Very simply, when you go to a website, you are recieving a load of JavaScript, CSS, and HTML files from some server that are then run by your web browser. The code running in your browser is the frontend, and the code running on the server delivering information is the backend. Web development consists of writing code that runs on both ends (fullstack), with people specializing towards one or the other. An API is essentially the code delivering resources from the backend. Since we are building a web API, the focus of our workshop is going to be on building out the backend.
 
 ### Building a Social Network for an animal shelter
 
