@@ -64,7 +64,7 @@ app.get('/people/:id', function(req, res, next) {
 // POST route that adds a new Person object
 app.post('/people', function(req, res, next) {
 	// First gets a random dog image URL
-	request('https://dog.ceo/api/breeds/image/random', function (error, response, body) 
+	request('https://dog.ceo/api/breeds/image/random', function (error, response, body) {
 		if (!error && response.statusCode == 200) {
 			var person = new Person();
 			person.name = req.body.name; // Stores the 'name' string
@@ -78,7 +78,7 @@ app.post('/people', function(req, res, next) {
 				}
 			})
 	  	}
-	})
+	});
 });
 
 // PUT route that adds a friend to a person
