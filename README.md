@@ -17,7 +17,7 @@ And then the server should start up at `localhost:3000`.
 
 This server uses `mongodb-memory-server` to run MongoDB in-memory as a database, Express for the API endpoints,
 
-If you want a challenge, use the `barebones` branch (`git fetch && git checkout barebones`) and you can fill out the implementation for the API endpoints yourself.
+If you want a challenge, use the `skeleton` branch (`git fetch && git checkout skeleton`) and you can fill out the implementation for the API endpoints yourself.
 
 
 ### What is an API?
