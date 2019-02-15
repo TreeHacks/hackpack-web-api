@@ -6,7 +6,7 @@
 Welcome to TreeHacks! This is the guide accompanying the Web API workshop. The goal of this workshop is to learn how to build RESTful web APIs using Node, MongoDB, and Express. From this workshop, you will learn what a web API is, dive into the frontend/backend structure of the web, and build your own backend for your web applications! You will also learn a bit about JavaScript and all the interesting things you can do in it.
 
 
-### What is an API
+### What is an API?
 
 API stands for Application Programming Interface. Pretty much, APIs are a way to access data and services running on servers from your own program. A great example of a publicly available API is the Dog API (literally called this) at https://dog.ceo/dog-api/. You can access all kinds of cool information about dogs by clicking the "JSON" button listed under each route. Give it a go! 
 
@@ -24,7 +24,19 @@ In the workshop, we will be pretending to build a Web API to be used by some hyp
 
 To accomplish this task, we will be building a web API using Node and Express that interfaces with the Dog API, as well as an accompanying frontend that allows the animal shelter to view all the information about their users. We want to support the operations of adding people and assigning a shelter dog to them, viewing all dog owners, adding a friend relationship between 2 dog owners, displaying the friends of a dog owner to organize meetups, and deleting a dog owner from the database in case their dog died... (we couldnt think of a better justification for this one sorry I know it's dark but it's a very important thing to know how to do rip).
 
-So that's all! We hope you can come to our workshop where we will walk through the process of writing this wonderful application for the animal shelter. If you are unable to come but are still interested in learning about building APIs, look at the next section for links to the fully written code (with excellent documentation and comments that describe everything going on), and other resources that we've personally used to learn about building APIs. We're both completely self-taught in web dev and you are all very smart people so I'm confident you can do it do if needed to (or just come to the darn workshop we promise we don't bite).
+### Workshop - getting started
+To get started with the full workshop, make sure you install Node JS. Run the following:
+
+```
+npm install
+npm start
+```
+
+And then the server should start up at `localhost:3000`.
+
+This server uses `mongodb-memory-server` as a database, Express for the API endpoints,
+
+If you want a challenge, use the `barebones` branch (`git fetch && git checkout barebones`) and you can fill out the implementation for the API endpoints yourself.
 
 ### Resources
 
