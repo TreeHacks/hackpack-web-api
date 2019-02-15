@@ -5,6 +5,20 @@
 
 Welcome to TreeHacks! This is the guide accompanying the Web API workshop. The goal of this workshop is to learn how to build RESTful web APIs using Node, MongoDB, and Express. From this workshop, you will learn what a web API is, dive into the frontend/backend structure of the web, and build your own backend for your web applications! You will also learn a bit about JavaScript and all the interesting things you can do in it.
 
+### Workshop - getting started
+To get started with the full workshop, make sure you install Node JS. Run the following:
+
+```
+npm install
+npm start
+```
+
+And then the server should start up at `localhost:3000`.
+
+This server uses `mongodb-memory-server` to run MongoDB in-memory as a database, Express for the API endpoints,
+
+If you want a challenge, use the `barebones` branch (`git fetch && git checkout barebones`) and you can fill out the implementation for the API endpoints yourself.
+
 
 ### What is an API?
 
@@ -23,20 +37,6 @@ Ever wondered how the internet works? Very simply, when you go to a website, you
 In the workshop, we will be pretending to build a Web API to be used by some hypothetical animal shelter. Essentially, the animal shelter wants to be able to assign dogs from the shelter randomly to new owners. Since they're located in Silicon Valley, they also want to build a social network on top of this operation to be able to see which dog owners are friends so that they can coordinate meetups for dog owners. They have come to TreeHacks to find some bright college kids to do this for them for cheap.
 
 To accomplish this task, we will be building a web API using Node and Express that interfaces with the Dog API, as well as an accompanying frontend that allows the animal shelter to view all the information about their users. We want to support the operations of adding people and assigning a shelter dog to them, viewing all dog owners, adding a friend relationship between 2 dog owners, displaying the friends of a dog owner to organize meetups, and deleting a dog owner from the database in case their dog died... (we couldnt think of a better justification for this one sorry I know it's dark but it's a very important thing to know how to do rip).
-
-### Workshop - getting started
-To get started with the full workshop, make sure you install Node JS. Run the following:
-
-```
-npm install
-npm start
-```
-
-And then the server should start up at `localhost:3000`.
-
-This server uses `mongodb-memory-server` as a database, Express for the API endpoints,
-
-If you want a challenge, use the `barebones` branch (`git fetch && git checkout barebones`) and you can fill out the implementation for the API endpoints yourself.
 
 ### Resources
 
