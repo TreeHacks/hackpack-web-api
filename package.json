@@ -4,13 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "mongodb-memory-server": "^3.1.1",
     "mongoose": "^5.0.3",
     "path": "^0.12.7",
     "request": "^2.83.0"
